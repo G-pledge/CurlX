@@ -1,3 +1,12 @@
+## 命令行参数
+
+| 参数 | 简写 | 说明 | 默认值 |
+|------|------|------|--------|
+| `--file` | `-f` | 输入文件路径，每行一个 URL | - |
+| `--url` | `-u` | 要检查的目标 URL | - |
+| `--timeout` | `-t` | 每个请求的超时时间（秒） | 5 |
+| `--help` | `-h` | 显示帮助信息 | - |
+
 ## 使用方法
 
 ### 检查单个 URL
@@ -7,16 +16,6 @@ CurlX -u https://www.example.com
 ```
 
 ### 从文件批量检查 URL
-
-创建一个文本文件（如 `urls.txt`），每行一个 URL：
-
-```
-www.baidu.com
-https://www.google.com
-www.github.com
-```
-
-然后运行：
 
 ```bash
 CurlX -f urls.txt
